@@ -1,56 +1,58 @@
-//  webpack.config.js  this is basically used for the the entry point
-//  and out put destination point dor plugins and dependecies 
-
 import path from 'node:path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export default {
-    mode:'development',
-    entry:{
-       main: './src/index.js',
-       about:'./src/about.js'
-
+    mode: 'development',
+    entry: {
+        main: './src/index.js',
+        about: './src/about.js',
+        blog: './src/blog.js',
     },
-    output:{
-        filename:'[name].js',
-        path:path.resolve(import.meta.dirname,'dist'),
-        clean:true,
+    output: {
+        filename: '[name].js',
+        path: path.resolve(import.meta.dirname, 'dist'),
+        clean: true,
     },
     devtool: "eval-source-map",
     devServer: {
-    watchFiles:["./src/**/*.html"],
-    hot:true
-  },
-    plugins:[
+        watchFiles: ["./src/**/*.html"],
+        hot: true,
+    },
+    plugins: [
         new HtmlWebpackPlugin({
-            template:'./src/index.html',
-            filename:'index.html',
-            chunks:['main']
+            template: './src/index.html',
+            filename: 'index.html',
+            chunks: ['main'],
         }),
         new HtmlWebpackPlugin({
-            template:"./src/about.html",
-            filename:"about.html",
-            chunks:["about"]
-        })
-
+            template: './src/about.html',
+            filename: 'about.html',
+            chunks: ['about'],
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/blog.html',
+            filename: 'blog.html',
+            chunks: ['blog'],
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css',
+        }),
     ],
-    module:{
-        rules:[
+    module: {
+        rules: [
             {
-                test:/\.css$/i,
-                use:['style-loader','css-loader']
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
-                test:/\.html$/i,
-                use:['html-loader']
+                test: /\.html$/i,
+                use: ['html-loader'],
             },
             {
- 
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: "asset/resource",
-            }
-        ]
-    }
-
-}
+                type: 'asset/resource',
+            },
+        ],
+    },
+};
