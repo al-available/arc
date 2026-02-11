@@ -150,6 +150,10 @@ body {
     text-decoration: none;
       color: #555;
 }
+.mobile-links li.active a {
+    text-decoration: none;
+      color:#f04a24;
+}
 
 .mobile-links li.active {
   color: #f04a24;
