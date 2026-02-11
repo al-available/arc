@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/main.css"
+/***/ "./src/blog.css"
 /*!**********************!*\
-  !*** ./src/main.css ***!
+  !*** ./src/blog.css ***!
   \**********************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbWFpbi5jc3MiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXJjLy4vc3JjL21haW4uY3NzPzc2YmIiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/main.css\n\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYmxvZy5jc3MiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXJjLy4vc3JjL2Jsb2cuY3NzPzU3YTQiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/blog.css\n\n}");
 
 /***/ },
 
-/***/ "./src/index.js"
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/blog.js"
+/*!*********************!*\
+  !*** ./src/blog.js ***!
+  \*********************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n\n\n// navigation bar \n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_1__.navBar)()\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6Ijs7O0FBQW1COztBQUVuQjtBQUNpQztBQUNqQywrQ0FBTSIsInNvdXJjZXMiOlsid2VicGFjazovL2FyYy8uL3NyYy9pbmRleC5qcz9iNjM1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9tYWluLmNzcydcblxuLy8gbmF2aWdhdGlvbiBiYXIgXG5pbXBvcnQgeyBuYXZCYXIgfSBmcm9tICcuL25hdmJhcidcbm5hdkJhcigpXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/index.js\n\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blog_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blog.css */ \"./src/blog.css\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n\n\n\n\n//  navigation Bar \n(0,_navbar__WEBPACK_IMPORTED_MODULE_1__.navBar)()//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYmxvZy5qcyIsIm1hcHBpbmdzIjoiOzs7QUFBbUI7O0FBRWM7O0FBRWpDO0FBQ0EsK0NBQU0iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hcmMvLi9zcmMvYmxvZy5qcz9kOGRiIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBcIi4vYmxvZy5jc3NcIlxuXG5pbXBvcnQgeyBuYXZCYXIgfSBmcm9tIFwiLi9uYXZiYXJcIlxuXG4vLyAgbmF2aWdhdGlvbiBCYXIgXG5uYXZCYXIoKSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/blog.js\n\n}");
 
 /***/ },
 
@@ -106,7 +106,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/blog.js");
 /******/ 	
 /******/ })()
 ;
